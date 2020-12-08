@@ -33,19 +33,19 @@ div{
 #screen{
     margin-top: 0;
     margin-bottom: 5rem;
-    width: 368px;
+    width: 95%;
 }
 
 #button0{
-    width: 203px;
+    width: 45%;
 }
 
 .simple{
-    width: 64px;
+    width: 15%;
 }
 
 .double{
-    width: 140px;
+    width: 35%;
 }
 
 .choix{
@@ -62,4 +62,11 @@ div{
 
 .block{
     border: none;
+}
+
+@media screen and (max-width: 600px){
+    #container{
+        width: 100%;
+        margin: 0;
+    }
 }
