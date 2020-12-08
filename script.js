@@ -72,10 +72,7 @@ document.getElementById("c").addEventListener("click", function(){
 });
 
 document.getElementById("screen").addEventListener("click", function(){
-    document.getElementById( 'to-copy' ).innerHTML = document.getElementById("screen").innerHTML
-    let toCopy  = document.getElementById( 'to-copy' );
-    toCopy.select();
-    document.execCommand( 'copy' );
+    navigator.clipboard.writeText( document.getElementById("screen").innerHTML);
 });
 
 
