@@ -63,3 +63,7 @@ div{
 .block{
     border: none;
 }
+
+#to-copy{
+    opacity: 0;
+}

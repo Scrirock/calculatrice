@@ -70,3 +70,12 @@ document.getElementById("c").addEventListener("click", function(){
     document.getElementById("screen").innerHTML = "";
     resultat = "";
 });
+
+document.getElementById("screen").addEventListener("click", function(){
+    document.getElementById( 'to-copy' ).innerHTML = document.getElementById("screen").innerHTML
+    let toCopy  = document.getElementById( 'to-copy' );
+    toCopy.select();
+    document.execCommand( 'copy' );
+});
+
+
